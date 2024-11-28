@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Restaurant Website</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background-image: url('vk1.png');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            text-align: center;
+            padding-top: 150px;
+        }
+        .menu-item {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body class="bg-secondary">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">VK Restaurant</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Menu</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#book">Book a Table</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <h1x>Welcome to Our Restaurant</h1x>
+        <p>Delicious Food. Unforgettable Experience.</p>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="container my-5">
+        <h2 class="text-center mb-4">Our Menu</h2>
+        <div class="row">
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="vk2.jpg" class="card-img-top" alt="Dish 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 1</h5>
+                        <p class="card-text">This Chinese-inspired sticky honey lemon chicken recipe is easy to make and tossed with an ...</p>
+                        <p class="card-text"><strong>$20.00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="vk3.jpg" class="card-img-top" alt="Dish 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 2</h5>
+                        <p class="card-text">Chicken marinated in yogurt, spices and cooked in a tandoor. The chicken get its charred flavour ...</p>
+                        <p class="card-text"><strong>$18.00</strong></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 menu-item">
+                <div class="card">
+                    <img src="vk4.jpg" class="card-img-top" alt="Dish 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Dish 3</h5>
+                        <p class="card-text">With this tried-and-tested recipe, learn how to make the most flavorful restaurant-style mutton ...</p>
+                        <p class="card-text"><strong>$22.00</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-secondary py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <p><strong>Address:</strong> 123 Restaurant St, City, Country</p>
+                    <p><strong>Email:</strong> contact@restaurant.com</p>
+                    <p><strong>Phone:</strong> (123) 456-7890</p>
+                </div>
+                <div class="col-md-6">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="4" placeholder="Your message..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Book a Table Section -->
+    <section id="book" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Book a Table</h2>
+            <form id="booking-form">
+                <div class="form-row">
+                    <div class="col-md-4">
+                        <label for="name">Your Name</label>
+                        <input type="text" class="form-control" id="book-name" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="email">Email Address</label>
+                        <input type="email" class="form-control" id="book-email" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="phone">Phone Number</label>
+                        <input type="tel" class="form-control" id="book-phone" required>
+                    </div>
+                </div>
+                <div class="form-row mt-3">
+                    <div class="col-md-6">
+                        <label for="date">Reservation Date</label>
+                        <input type="date" class="form-control" id="book-date" required>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="time">Reservation Time</label>
+                        <input type="time" class="form-control" id="book-time" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary mt-3">Book Now</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-light text-dark text-center py-4">
+        <p>&copy; 2024 Restaurant Name. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Custom JavaScript for form submission -->
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Message sent!');
+        });
+
+        document.getElementById('booking-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Table booked successfully!');
+        });
+    </script>
+</body>
+</html>

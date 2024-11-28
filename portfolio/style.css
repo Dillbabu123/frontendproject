@@ -1,0 +1,23 @@
+/* Custom Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero {
+    background-image: url('hero-bg.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+section {
+    padding: 60px 0;
+}
+
+.card {
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #333;
+}
+

@@ -1,0 +1,19 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  h2 {
+    margin-bottom: 20px;
+    color:white;
+  }
+  
+ 
+  
+  footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
